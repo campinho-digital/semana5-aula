@@ -49,6 +49,19 @@ function addToCart() {
 
   // o conteudo salvo no carrinho é exibido no console 
   console.log(carrinho);
+
+  // chama a função e exibe um alerta com o nome de todos os itens que foram adicionados ao carrinho
+  exibirNomes();
 }
 
+// Função para exibir os nomes dos itens no carrinho em um alerta
+function exibirNomes() {
+  let nomes = carrinho.map(item => item.nome).join(", ");
+  alert(`Itens no carrinho: ${nomes}`);
+}
+
+
+// chama a função
+
 addToCart();
+
